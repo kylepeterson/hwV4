@@ -1,0 +1,276 @@
+/* 	Kyle Peterson
+	These are the styles to be used with the Dawg Pizza site. All pages of 
+	Dawg Pizza reference the styles used here */
+
+@import url("reset.css");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700|Roboto:400,700,400italic);
+
+/* Styles for the entire site */
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("../img/flour.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+@media (min-width: 1px) {
+  	.container {
+		max-width: 500px; 
+  	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 820px;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	position: relative;
+	padding: 0;
+
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.logo-link:focus img {
+	outline: rgb(106, 49, 142) solid 2px;
+	background-color: rgb(106, 49, 142);
+}
+
+.template {
+	display: none;
+}
+
+/* Header area of the web page */
+header {
+	background-color: rgb(156, 117, 202);
+}
+
+a h1 {
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	z-index: 20;	
+	color: rgb(0, 8, 63);
+	font-weight: bold;
+	font-size: 2em;
+	top: 148px;
+	background-color: rgb(156, 117, 202);
+	padding-bottom: 10px;
+}
+header a {
+	width: 38%;
+}
+
+.leaf {
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 250%;
+	padding: 10px;
+	color: rgb(255, 206, 71);
+
+}
+
+.logo {
+	width: 24%;
+	height: auto;
+	position: absolute;
+	z-index: 10;
+	left: 38%;
+	border-radius: 0 0 20px 20px;
+	padding: 1%;
+}
+
+.logo, a h1, .leaf, .container {
+	background-image: url("../img/hexabump.png");
+}
+
+}
+
+img {
+	height: 150px;
+	width: auto;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(106, 49, 142);
+}
+
+nav li:hover, nav h1:hover {
+	color: rgb(106, 49, 142);
+}
+
+nav a {
+	z-index: 20;
+}
+
+/* Main Section of the Home page */
+.item img, #oven-pic, #order-pic {
+	width: 100%;
+	height:	auto;
+	margin: 0;
+}
+
+#description {
+	position: absolute;
+	background-color: white;
+	font-style: italic;
+	z-index: 15;
+	left: 38%;
+	padding: .5em;
+}
+
+@media (min-width: 1px) {
+  #description {
+	font-size: 1em;
+	top: 34%;
+  }
+}
+
+@media (min-width: 992px) {
+  #description {
+	font-size: 2em;
+	top: 36%;
+  }
+}
+
+.main-page-content {
+	text-align: center;
+}
+
+/* Information section on the home page */
+#info {
+	color: black;
+	margin: 0;
+	font-size: 1em;
+	font-weight: bold;	
+}
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+
+}
+
+@media (min-width: 1px) {
+  	#info .col-md-6  {
+		font-size: 1em;  	
+	}
+}
+
+@media (min-width: 992px) {
+	#info .col-md-6  {
+		font-size: 1.5em;
+	}
+}
+
+#info .col-md-6 {
+	background-color: white;
+}
+
+#info p {
+	padding-bottom: 1em;
+}
+
+#twitter {
+	height: 90px;
+	width: auto;
+}
+
+#menu {
+	background-color: white;
+}
+
+#info a:hover {
+	text-decoration: underline;
+}
+
+#info .row {
+	background-color: white;
+	padding-top: 1em;
+}
+
+#pizza-carousel {
+	clear: both;
+}
+
+/* Menu Section of the menu page */
+
+
+dt {
+	font-weight: bold;
+}
+
+dd, #menu li, dl, h1, h2, h3, dt, #menu ul, #menu p {
+	padding-bottom: .5em;
+}
+
+#menu {
+	text-align: center;
+	padding: 1em;
+}
+
+#menu p {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+#drinks-and-dessert {
+	margin-top: 20px;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+strong {
+	font-style: italic;
+	font-size: 2em;
+}
+
+/* About us section */
+
+#about {
+	background-color: white;
+	text-align: left;
+	padding: 1em;	
+}
+
+#about p {
+	padding: 1em;
+}
+
+.bottom-logo {
+	width: 100%;
+	height: auto;
+	padding: 1em;
+}
+
