@@ -48,6 +48,6 @@ function renderCart(cart, container) {
 	tax = tax.toFixed(2);
 	$('.sub-total').html('Subtotal: $' + cost);
 	$('.tax').html('Tax: $' + tax);
-	$('.total').html('Total: $' + parseInt(cost) + parseInt(tax);
+	$('.total').html('Total: $' + parseInt(cost) + parseInt(tax));
 
 }
