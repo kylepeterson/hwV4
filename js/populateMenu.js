@@ -13,6 +13,7 @@ function populatePizzas() {
 	var instance;
 	$.each(com.dawgpizza.menu.pizzas, function() {
 		// Create instance of pizza template
+		var prices = this.prices;
     	instance = $('#pizzas .template').clone();
     	instance.find('.name').html(this.name);
        	instance.find('.description').html(this.description);
@@ -22,13 +23,13 @@ function populatePizzas() {
     			'data-name': this.name,
     			'data-type': "pizza"
     		});
-    		instance.find('.small').attr('data-price': this.prices[0]);
-    		instance.find('.medium').attr('data-price': this.prices[1]);
-    		instance.find('.large').attr('data-price': this.prices[2]);
+    		instance.find('.small').attr('data-price': prices[0]);
+    		instance.find('.medium').attr('data-price': prices[1]);
+    		instance.find('.large').attr('data-price': prices[2]);
     		instance.find('.add-to-cart').html(this.attr('data-size') + ": $" + this.attr('data-price'));
     	} else {
-			instance.find('.prices').html('$' + this.prices[0] + '/$' + 
-    			this.prices[1] + '/$' + this.prices[2]);
+			instance.find('.prices').html('$' + prices[0] + '/$' + 
+    			prices[1] + '/$' + prices[2]);
     	}
     	instance.removeClass('template');
     	// Append to meat or vegetarian section depending on vegetarian attribute
