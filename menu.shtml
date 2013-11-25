@@ -7,17 +7,16 @@
 <!-- Note: The SSI causes the HTML validator to fail as it does not see the code in header.html. It passes with the SSI code in this file. -->
 <!--#include virtual="header.html" -->
 			<section>
-				<img id="order-pic" src="img/order.jpg" alt="an ordering stand for pizza">
-				<p id="description">
-					<a href="order.shtml" class="order-here">
-						Order Online Here! We Deliver Within Seattle City Limits
-						Monday - Sunday From Noon - Eleven!
-					</a>
-				</p>
+				<img id="order-pic" src="img/pizza2.jpg" alt="a nice pizza">
 			</section>
 
 			<section id="menu"> 
 				<h1>Dawg Pizza Menu</h1>
+				<h2>
+					<a href="order.shtml" >
+						Order Here!
+					</a>
+				</h2>
 				<h2>Pizzas</h2>
 				<p>
 					All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:

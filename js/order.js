@@ -29,6 +29,13 @@ $(function() {
 	$('.place-order').click(function() {
 		postCart(cart, $('.cart-form'));
 	});
+
+	$('.clear').click(function() {
+		while(cart.items.length > 0) {
+			cart.items.pop();
+		}
+		renderCart(cart, $('.cart-container'));
+	});
 });
 
 
