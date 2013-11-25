@@ -195,10 +195,6 @@ nav a {
 	width: auto;
 }
 
-#menu, #order-options {
-	background-color: white;
-}
-
 #info a:hover {
 	text-decoration: underline;
 }
@@ -275,3 +271,8 @@ strong {
 	padding: 1em;
 }
 
+/* Order Section */
+
+button {
+	margin-bottom: .5em;
+}
