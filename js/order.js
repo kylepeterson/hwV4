@@ -30,8 +30,8 @@ $(function() {
 
 
 function renderCart(cart, container) {
-	var i, item, instance, cost, tax;
-	cost = 0;
+	var i, item, instance;
+	var cost = 0;
 	container.empty();
 	for(i = 0; i < cart.items.length; i++) {
 		item = cart.items[i];
@@ -39,14 +39,16 @@ function renderCart(cart, container) {
 		instance.find('.name').html(item.name);
 		instance.find('.size').html(item.size);
 		instance.find('.price').html("$" + item.price);
-		cost += parseInt(item.price);
 		instance.removeClass('template');
 		container.append(instance);
 	}
 
+	for(i = 0; i < cart.items.length; i++) {
+		var currentCost = parseInt(cart.items[i].price);
+		cost += currentCost;
+	}
 	$('.sub-total').html('Subtotal: $' + cost);
-	tax = cost * .095;
-	$('.tax').html('Tax: $' + tax);
-	$('.total').html('Total: $' + cost + tax);
+	$('.tax').html('Tax: $' + cost * .095);
+	$('.total').html('Total: $' + cost + (cost * .095));
 
 }
