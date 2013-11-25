@@ -93,9 +93,8 @@
 					<label>Phone:
 						<input class="form-phone" type="text" name="phone" required>
 					</label>
-					<br>
+					<button class="btn btn-primary place-order" type="submit">Place Order</button>
 				</form>
-				<button class="btn btn-primary place-order" type="submit">Place Order</button>
 				<div class="costs">
 					<p class="sub-total">Subtotal: $0.00</p>
 					<p class = "tax">Tax: $0.00</p>

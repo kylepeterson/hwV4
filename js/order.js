@@ -1,3 +1,5 @@
+// Kyle Peterson
+// Scripts for use with the ordering page
 
 // Document Ready
 $(function() {
@@ -38,7 +40,8 @@ $(function() {
 	});
 });
 
-
+// takes the current cart and displays it on the web page
+// Takes in the cart object and the container to display the cart in
 function renderCart(cart, container) {
 	var i, item, instance;
 	var cost = 0;
@@ -80,13 +83,17 @@ function renderCart(cart, container) {
 	$('.total').html('Total: $' + total);
 }
 
+// Sends a post request to the server using the information the user inputs.
+// takes in the cart object and the form containing the user data
 function postCart(cart, cartForm) {
+	// Fill in cart with correct data
 	cart.name = cartForm.find('input[name="name"]').val();
 	cart.address1 = cartForm.find('input[name="address1"]').val();
 	cart.address2 = cartForm.find('input[name="address2"]').val();
 	cart.zip = cartForm.find('input[name="zip"]').val();
 	cart.phone = cartForm.find('input[name="phone"]').val();
 
+	//Post data
 	cartForm.find('input[name="cart"]').val(JSON.stringify(cart));
 	cartForm.submit();
 }
