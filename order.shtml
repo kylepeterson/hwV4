@@ -53,7 +53,6 @@
 						<!-- Append Drinks Here -->
 						<span class="template drink for-order">
 							<dt class="name"></dt>
-							<dd class="prices"></dd>
 							<button class="btn btn-primary place-order" type="button">
 						</span>
 					</dl>

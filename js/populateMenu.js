@@ -46,7 +46,6 @@ function populateDrinks() {
 		// Create instance of drink template
     	instance = $('.drinks .template').clone();
     	instance.find('.name').html(this.name);
-    	instance.find('.prices').html('$' + this.price);
     	if(instance.hasClass('for-order')) {
     		instance.find('.place-order').attr({
     			'data-name': this.name,
@@ -54,6 +53,8 @@ function populateDrinks() {
     			'data-price': this.price
     		});
       		instance.find('.place-order').html("Add to Cart: $" + this.price);
+    	} else {
+    		instance.find('.prices').html('$' + this.price);
     	}
     	instance.removeClass('template');
     	// Append instance to the drinks section
