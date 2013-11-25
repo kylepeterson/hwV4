@@ -15,7 +15,7 @@ $(function() {
 			type: this.getAttribute('data-type'),
 			name: this.getAttribute('data-name'),
 			size: this.getAttribute('data-size'),
-			price: this.getAttribute('data-price')
+			price: this.getAttribute('data-price'),
 			index: cart.items.length;
 		};
 
