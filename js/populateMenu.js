@@ -19,6 +19,8 @@ function populatePizzas() {
        	instance.find('.description').html(this.description);
   
     	if(instance.hasClass('for-order')) {
+    		// For the order page initialize all of the ordering buttons
+    		// Give each button appropriate data attributes
     		instance.find('.add-to-cart').attr({
     			'data-name': this.name,
     			'data-type': "pizza"
@@ -31,13 +33,8 @@ function populatePizzas() {
     			button.html(sizes[i] + ": $" + prices[i]);
 
     		}
-    		/*instance.find('.small').attr('data-price', prices[0]);
-    		instance.find('small').html("Small: $" + prices[0]);
-    		instance.find('.medium').attr('data-price', prices[1]);
-    		instance.find('medium').html("Medium: $" + prices[1]);
-    		instance.find('.large').attr('data-price', prices[2]);    		
-    		instance.find('large').html("Large: $" + prices[2]);*/
     	} else {
+    		// For the menu page intialize the price listings
 			instance.find('.prices').html('$' + prices[0] + '/$' + 
     			prices[1] + '/$' + prices[2]);
     	}

@@ -68,5 +68,8 @@
 				</div>
 			</section>
 			<section id="cart" class="col-md-6">
+				<h1>Cart</h1>
+				<div id="cart-container">
+				</div>
 			</section>
 <!--#include virtual="footer.html" -->
