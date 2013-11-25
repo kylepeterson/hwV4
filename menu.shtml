@@ -8,6 +8,12 @@
 <!--#include virtual="header.html" -->
 			<section>
 				<img id="order-pic" src="img/order.jpg" alt="an ordering stand for pizza">
+				<p id="description">
+					<a href="order.shtml" class="order-here">
+						Order Online Here! We Deliver Within Seattle City Limits
+						Monday - Sunday From Noon - Eleven!
+					</a>
+				</p>
 			</section>
 
 			<section id="menu"> 
