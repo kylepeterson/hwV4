@@ -87,9 +87,12 @@
 					</label>
 					<input type="hidden" name="cart">
 					<button class="btn btn-primary place-order" type="submit">Place Order</button>
-
 				</form>
-
+				<div class="costs">
+					<p class="sub-total">Subtotal: $0.00</p>
+					<p class = "tax">Tax: $0.00</p>
+					<p class = "total">Total: $0.00</p>
+				</div>
 
 				<div class="template cart-item">
 					<h3 class="name"></h3>
@@ -98,11 +101,6 @@
 					<button class="btn btn-danger remove" type="button">Remove From Cart</button>
 				</div>
 				<div class="cart-container">
-				</div>
-				<div class="costs">
-					<p class="sub-total">Subtotal: $0.00</p>
-					<p class = "tax">Tax: $0.00</p>
-					<p class = "total">Total: $0.00</p>
 				</div>
 			</section>
 <!--#include virtual="footer.html" -->

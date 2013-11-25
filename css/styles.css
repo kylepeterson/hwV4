@@ -287,3 +287,11 @@ strong {
 #cart h3, #cart p {
 	padding-top: .5em;
 }
+
+form {
+	text-align: right;
+}
+
+input {
+	display: inline-block;
+}
