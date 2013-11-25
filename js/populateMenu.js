@@ -53,7 +53,7 @@ function populateDrinks() {
     			'data-type': 'drink',
     			'data-price': this.price
     		});
-      		instance.find('.place-order').html("Add to Cart: $" this.price);
+      		instance.find('.place-order').html("Add to Cart: $" + this.price);
     	}
     	instance.removeClass('template');
     	// Append instance to the drinks section
@@ -75,7 +75,7 @@ function populateDesserts() {
     			'data-type': 'dessert',
     			'data-price': this.price
     		});
-       		instance.find('.place-order').html("Add to Cart: $" this.price);
+       		instance.find('.place-order').html("Add to Cart: $" + this.price);
     	}
     	instance.removeClass('template');
     	// append instance to the desserts section
