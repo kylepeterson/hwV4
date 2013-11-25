@@ -49,8 +49,8 @@ function populateDrinks() {
     	instance.find('.prices').html('$' + this.price);
     	if(instance.hasClass('for-order')) {
     		instance.find('.place-order').attr({
-    			'data-name': this.name
-    			'data-type': 'drink'
+    			'data-name': this.name,
+    			'data-type': 'drink',
     			'data-price': this.price;
     		});
       		instance.find('.place-order').html("Add to Cart: $" this.price);
@@ -71,8 +71,8 @@ function populateDesserts() {
     	instance.find('.prices').html('$' + this.price);
     	if(instance.hasClass('for-order')) {
     		instance.find('.place-order').attr({
-    			'data-name': this.name
-    			'data-type': 'dessert'
+    			'data-name': this.name,
+    			'data-type': 'dessert',
     			'data-price': this.price;
     		});
        		instance.find('.place-order').html("Add to Cart: $" this.price);
