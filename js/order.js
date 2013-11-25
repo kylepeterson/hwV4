@@ -32,6 +32,7 @@ $(function() {
 function renderCart(cart, container) {
 	var i, item, instance;
 	var cost = 0;
+	var tax = 0;
 	container.empty();
 	for(i = 0; i < cart.items.length; i++) {
 		item = cart.items[i];
@@ -43,11 +44,11 @@ function renderCart(cart, container) {
 		instance.removeClass('template');
 		container.append(instance);
 	}
-	var tax = parseInt(cost) * .095;
+	tax = parseInt(cost) * .095;
 	cost = parseInt(cost).toFixed(2);
 	tax = parseInt(tax).toFixed(2);
 	$('.sub-total').html('Subtotal: $' + cost);
 	$('.tax').html('Tax: $' + tax);
-	$('.total').html('Total: $' + cost + tax);
+	$('.total').html('Total: $' + parseInt(cost) + parseInt(tax));
 
 }
