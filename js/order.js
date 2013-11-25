@@ -44,9 +44,9 @@ function renderCart(cart, container) {
 	}
 
 	// Render Total Cost and Taxes
-	$('sub-total').html('Subtotal: $' + cost);
+	$('.sub-total').html('Subtotal: $' + cost);
 	tax = cost * .095;
-	$('tax').html('Tax: $' + tax);
-	$('total').html('Total: $' + cost + tax);
+	$('.tax').html('Tax: $' + tax);
+	$('.total').html('Total: $' + cost + tax);
 
 }
