@@ -38,12 +38,11 @@ function renderCart(cart, container) {
 		instance.find('.name').html(item.name);
 		instance.find('.size').html(item.size);
 		instance.find('.price').html("$" + item.price);
-		cost = cost + item.price;
+		cost = cost + parseInt(item.price, 10);
 		instance.removeClass('template');
 		container.append(instance);
 	}
 
-	// Render Total Cost and Taxes
 	$('.sub-total').html('Subtotal: $' + cost);
 	tax = cost * .095;
 	$('.tax').html('Tax: $' + tax);
