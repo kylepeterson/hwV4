@@ -23,9 +23,9 @@ function populatePizzas() {
     			'data-name': this.name,
     			'data-type': "pizza"
     		});
-    		instance.find('.small').attr('data-price': prices[0]);
-    		instance.find('.medium').attr('data-price': prices[1]);
-    		instance.find('.large').attr('data-price': prices[2]);
+    		instance.find('.small').attr('data-price', prices[0]);
+    		instance.find('.medium').attr('data-price', prices[1]);
+    		instance.find('.large').attr('data-price', prices[2]);
     		instance.find('.add-to-cart').html(this.attr('data-size') + ": $" + this.attr('data-price'));
     	} else {
 			instance.find('.prices').html('$' + prices[0] + '/$' + 
