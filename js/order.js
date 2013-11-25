@@ -1,6 +1,15 @@
 
 // Document Ready
 $(function() {
+	// Initialize Cart
+	var cart = {
+		name: null,
+		address1: null,
+		zip: null,
+		phone: null,
+		items: []
+	}
+	
 	$('.add-to-cart').click(function() {
 		var newCartItem = {
 			type: this.getAttribute('data-type'),
@@ -15,15 +24,6 @@ $(function() {
 		// Render item in the cart on the order page.
 		renderCart(cart, $('#cart-container'));
 	});
-
-	// Initialize Cart
-	var cart = {
-		name: null,
-		address1: null,
-		zip: null,
-		phone: null,
-		items: []
-	}
 });
 
 
