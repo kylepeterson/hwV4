@@ -47,6 +47,14 @@ function populateDrinks() {
     	instance = $('.drinks .template').clone();
     	instance.find('.name').html(this.name);
     	instance.find('.prices').html('$' + this.price);
+    	if(instance.hasClass('for-order')) {
+    		instance.find('.place-order').attr({
+    			'data-name': this.name
+    			'data-type': 'drink'
+    			'data-price': this.price;
+    		});
+      		instance.find('.place-order').html("Add to Cart: $" this.price);
+    	}
     	instance.removeClass('template');
     	// Append instance to the drinks section
 	    $('.drinks').append(instance);
@@ -61,6 +69,14 @@ function populateDesserts() {
     	instance = $('.desserts .template').clone();
     	instance.find('.name').html(this.name);
     	instance.find('.prices').html('$' + this.price);
+    	if(instance.hasClass('for-order')) {
+    		instance.find('.place-order').attr({
+    			'data-name': this.name
+    			'data-type': 'dessert'
+    			'data-price': this.price;
+    		});
+       		instance.find('.place-order').html("Add to Cart: $" this.price);
+    	}
     	instance.removeClass('template');
     	// append instance to the desserts section
 	    $('.desserts').append(instance);

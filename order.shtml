@@ -51,17 +51,19 @@
 					<h2>Drinks</h2>
 					<dl class="drinks">
 						<!-- Append Drinks Here -->
-						<span class="template drink">
+						<span class="template drink for-order">
 							<dt class="name"></dt>
 							<dd class="prices"></dd>
+							<button class="btn btn-primary place-order" type="button">
 						</span>
 					</dl>
 					<h2>Dessert</h2>
 					<dl class="desserts">
 						<!-- Append Desserts Here -->
-						<span class="template dessert">
+						<span class="template dessert for-order">
 							<dt class="name"></dt>
 							<dd class="prices"></dd>
+							<button class="btn btn-primary place-order" type="button">
 						</span>
 					</dl>
 				</div>
