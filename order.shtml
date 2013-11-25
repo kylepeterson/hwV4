@@ -18,10 +18,13 @@
 							<h3>Meat Pies</h3>
 							<dl class="meat-list">
 								<!-- Template for all pizzas -->
-								<span class="template pizza">
+								<span class="template pizza for-order">
 									<dt class="name"></dt>
 									<dd class="description"></dd>
 									<dd class="prices"></dd>
+									<button class="btn btn-primary place-order" type="button">
+										Add to Cart
+									</button>
 								</span>
 								<!-- Append Meat Pies Here -->
 							</dl>

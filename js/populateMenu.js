@@ -16,7 +16,14 @@ function populatePizzas() {
     	instance = $('#pizzas .template').clone();
     	instance.find('.name').html(this.name);
        	instance.find('.description').html(this.description);
-    	instance.find('.prices').html('$' + this.prices[0] + '/$' + this.prices[1] + '/$' + this.prices[2]);
+    	instance.find('.prices').html('$' + this.prices[0] + '/$' + 
+    		this.prices[1] + '/$' + this.prices[2]);
+    	if(instance.hasClass('for-order')) {
+    		instance.find('.place-order').attr({
+    			data-type: "pizza",
+    			data-name: this.name
+    		});
+    	}
     	instance.removeClass('template');
     	// Append to meat or vegetarian section depending on vegetarian attribute
     	if(this.vegetarian) {
