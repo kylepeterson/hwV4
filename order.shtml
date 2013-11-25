@@ -69,6 +69,26 @@
 			</section>
 			<section id="cart" class="col-md-6">
 				<h1>Cart</h1>
+				<form class="cart-form" method="POST" action="http://dawgpizza.com/orders/">
+					<label>Name:
+						<input class="form-name" type="text" name="name" required>
+					</label>
+					<label>Address 1:
+						<input class="form-address1" type="text" name="address1" required>
+					</label>
+					<label>Address 2:					
+						<input class="form-address2" type="text" name="address2">
+					</label>
+					<label>Zip: 
+						<input class="form-zip" type="text" name="zip" required>
+					</label>
+					<label>
+						<input class="form-phone" type="text" name="phone" required>
+					</label>
+					<button class="btn btn-primary place-order" type="submit">Place Order</button>
+				</form>
+
+
 				<div class="template cart-item">
 					<h3 class="name"></h3>
 					<p class="size"></p>
