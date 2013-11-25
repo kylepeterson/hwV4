@@ -100,7 +100,7 @@
 					<p class = "tax">Tax: $0.00</p>
 					<p class = "total">Total: $0.00</p>
 				</div>
-				<button class="btn btn-danger clear" type="button">Place Order</button>
+				<button class="btn btn-danger clear" type="button">Clear</button>
 				<div class="template cart-item">
 					<h3 class="name"></h3>
 					<p class="size"></p>
