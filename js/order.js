@@ -16,8 +16,7 @@ $(function() {
 			type: this.getAttribute('data-type'),
 			name: this.getAttribute('data-name'),
 			size: this.getAttribute('data-size'),
-			price: this.getAttribute('data-price'),
-			index: cart.items.length
+			price: this.getAttribute('data-price')
 		};
 
 		// push the new item onto the carts items array

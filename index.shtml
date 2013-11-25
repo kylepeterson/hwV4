@@ -40,7 +40,10 @@
 		    		</a>
 				</div>
 				<p id="description">
-					Awesome wood-fired pizza with fresh ingredients baked to order. Come in and eat, or call us for delivery!
+					<a href="order.shtml" class="order-here">
+						Order Online Here! We Deliver Within Seattle City Limits
+						Monday - Sunday From Noon - Eleven!
+					</a>
 				</p>
 			</section>
 			<section id="info">
