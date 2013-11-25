@@ -16,6 +16,7 @@ $(function() {
 			name: this.getAttribute('data-name'),
 			size: this.getAttribute('data-size'),
 			price: this.getAttribute('data-price')
+			index: cart.items.length;
 		};
 
 		// push the new item onto the carts items array
@@ -24,11 +25,12 @@ $(function() {
 		// Render item in the cart on the order page.
 		renderCart(cart, $('.cart-container'));
 	});
+
 });
 
 
 function renderCart(cart, container) {
-	var i, item, instance;
+	var i, item, instance, cost, tax;
 	container.empty();
 	for(i = 0; i < cart.items.length; i++) {
 		item = cart.items[i];
@@ -36,7 +38,15 @@ function renderCart(cart, container) {
 		instance.find('.name').html(item.name);
 		instance.find('.size').html(item.size);
 		instance.find('.price').html("$" + item.price);
+		cost = cost + item.price;
 		instance.removeClass('template');
 		container.append(instance);
 	}
+
+	// Render Total Cost and Taxes
+	$('sub-total').html('Subtotal: $' + cost);
+	tax = cost * .095;
+	$('tax').html('Tax: $' + tax);
+	$('total').html('Total: $' + cost + tax);
+
 }

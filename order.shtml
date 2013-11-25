@@ -77,5 +77,10 @@
 				</div>
 				<div class="cart-container">
 				</div>
+				<div class="costs">
+					<p class="subtotal">Subtotal: $0.00</p>
+					<p class = "tax">Tax: $0.00</p>
+					<p class = "total">Total: $0.00</p>
+				</div>
 			</section>
 <!--#include virtual="footer.html" -->
