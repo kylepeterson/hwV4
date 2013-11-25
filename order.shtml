@@ -69,7 +69,7 @@
 			</section>
 			<section id="cart" class="col-md-6">
 				<h1>Cart</h1>
-				<div id="cart-container">
+				<div class="cart-container">
 					<div class="template cart-item">
 						<h2 class="name"></h2>
 						<p class="size"></p>

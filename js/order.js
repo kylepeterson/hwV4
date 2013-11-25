@@ -1,5 +1,4 @@
 
-"use strict";
 // Document Ready
 $(function() {
 	// Initialize Cart
@@ -23,7 +22,7 @@ $(function() {
 		cart.items.push(newCartItem);
 
 		// Render item in the cart on the order page.
-		renderCart(cart, $('#cart-container'));
+		renderCart(cart, $('.cart-container'));
 	});
 });
 
@@ -33,7 +32,7 @@ function renderCart(cart, container) {
 	container.empty();
 	for(i = 0; i < cart.items.length; i++) {
 		item = cart.items[i];
-		instance = $('#cart .template').clone();
+		instance = $('.cart-container .template').clone();
 		instance.find('.name').html(item.name);
 		instance.find('.size').html(item.size);
 		instance.find('price').html(item.price);
