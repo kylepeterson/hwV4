@@ -39,16 +39,13 @@ function renderCart(cart, container) {
 		instance.find('.name').html(item.name);
 		instance.find('.size').html(item.size);
 		instance.find('.price').html("$" + item.price);
+		cost += parseInt(item.price);
 		instance.removeClass('template');
 		container.append(instance);
 	}
-
-	for(i = 0; i < cart.items.length; i++) {
-		var currentCost = parseInt(cart.items[i].price);
-		cost += currentCost;
-	}
-	$('.sub-total').html('Subtotal: $' + cost);
-	$('.tax').html('Tax: $' + cost * .095);
-	$('.total').html('Total: $' + cost + (cost * .095));
+	var tax = parseInt(cost) * .095;
+	$('.sub-total').html('Subtotal: $' + cost.toFixed(2));
+	$('.tax').html('Tax: $' + tax.toFixed(2));
+	$('.total').html('Total: $' + (parseInt(cost) + parseInt(tax)).toFixed(2));
 
 }
