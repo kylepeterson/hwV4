@@ -25,13 +25,6 @@ $(function() {
 		// Render item in the cart on the order page.
 		renderCart(cart, $('.cart-container'));
 	});
-
-	$('.remove').click(function() {
-		var target = this.getAttribute('data-index');
-		cart.items.spice(target, 1);
-		renderCart(cart, $('.cart-container'));
-	});
-
 });
 
 
@@ -49,6 +42,11 @@ function renderCart(cart, container) {
 		instance.find('.size').html(item.size);
 		instance.find('.price').html("$" + item.price);
 		instance.find('.remove').attr('data-index', i);
+		$('.remove').click(function() {
+			var target = this.getAttribute('data-index');
+			cart.items.spice(target, 1);
+			renderCart(cart, $('.cart-container'));
+		});
 		cost += parseInt(item.price);
 		instance.removeClass('template');
 		container.append(instance);
