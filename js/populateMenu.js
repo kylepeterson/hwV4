@@ -18,8 +18,9 @@ function populatePizzas() {
        	instance.find('.description').html(this.description);
   
     	if(instance.hasClass('for-order')) {
-    		instance.find('.place-order').attr({
-    			'data-name': this.name
+    		instance.find('.add-to-cart').attr({
+    			'data-name': this.name,
+    			'data-type': "pizza"
     		});
     		instance.find('.small').html("Small: $" + this.prices[0]);
     		instance.find('.medium').html("Medium: $" + this.prices[1]);
@@ -47,12 +48,12 @@ function populateDrinks() {
     	instance = $('.drinks .template').clone();
     	instance.find('.name').html(this.name);
     	if(instance.hasClass('for-order')) {
-    		instance.find('.place-order').attr({
+    		instance.find('.add-to-cart').attr({
     			'data-name': this.name,
     			'data-type': 'drink',
     			'data-price': this.price
     		});
-      		instance.find('.place-order').html("Add to Cart: $" + this.price);
+      		instance.find('.add-to-cart').html("Add to Cart: $" + this.price);
     	} else {
     		instance.find('.prices').html('$' + this.price);
     	}
@@ -71,12 +72,12 @@ function populateDesserts() {
     	instance.find('.name').html(this.name);
     	instance.find('.prices').html('$' + this.price);
     	if(instance.hasClass('for-order')) {
-    		instance.find('.place-order').attr({
+    		instance.find('.add-to-cart').attr({
     			'data-name': this.name,
     			'data-type': 'dessert',
     			'data-price': this.price
     		});
-       		instance.find('.place-order').html("Add to Cart: $" + this.price);
+       		instance.find('.add-to-cart').html("Add to Cart: $" + this.price);
     	} else {
     		instance.find('.prices').html('$' + this.price);
     	}

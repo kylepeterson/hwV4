@@ -29,11 +29,12 @@
 								<span class="template pizza for-order">
 									<dt class="name"></dt>
 									<dd class="description"></dd>
-									<button class="btn btn-primary place-order small" type="button" data-size="Small">
+									<button class="btn btn-primary add-to-cart small" type="button" data-size="Small">
 									</button>
-									<button class="btn btn-primary place-order medium" type="button" data-size="Medium">
+									<button class="btn btn-primary add-to-cart medium" type="button" data-size="Medium">
 									</button>
-									<button class="btn btn-primary place-order large" type="button" data-size="Large">
+									<button class="btn btn-primary add-to-cart
+									 large" type="button" data-size="Large">
 									</button>
 								</span>
 								<!-- Append Meat Pies Here -->
@@ -53,7 +54,7 @@
 						<!-- Append Drinks Here -->
 						<span class="template drink for-order">
 							<dt class="name"></dt>
-							<button class="btn btn-primary place-order" type="button">
+							<button class="btn btn-primary add-to-cart" type="button">
 						</span>
 					</dl>
 					<h2>Dessert</h2>
@@ -61,7 +62,7 @@
 						<!-- Append Desserts Here -->
 						<span class="template dessert for-order">
 							<dt class="name"></dt>
-							<button class="btn btn-primary place-order" type="button">
+							<button class="btn btn-primary add-to-cart" type="button">
 						</span>
 					</dl>
 				</div>
