@@ -284,6 +284,6 @@ strong {
 	height: 100%;
 }
 
-#cart h3 {
+#cart h3, #cart p {
 	padding-top: .5em;
 }
