@@ -25,12 +25,12 @@ function populatePizzas() {
     			'data-name': this.name,
     			'data-type': "pizza"
     		});
-    		var sizes = ['Small', 'Medium', 'Large'];
+    		var sizes = ['small', 'medium', 'large'];
     		var i;
     		for(i = 0; i < 3; i++) {
     			var button = instance.find("[data-size='" + sizes[i] + "']");
     			button.attr('data-price', prices[i]);
-    			button.html(sizes[i] + ": $" + prices[i]);
+    			button.html(sizes[i].charAt(0).toUpperCase() + size[i].substring(1) + ": $" + prices[i]);
 
     		}
     	} else {

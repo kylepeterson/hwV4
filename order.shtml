@@ -29,12 +29,12 @@
 								<span class="template pizza for-order">
 									<dt class="name"></dt>
 									<dd class="description"></dd>
-									<button class="btn btn-primary add-to-cart small" type="button" data-size="Small">
+									<button class="btn btn-primary add-to-cart small" type="button" data-size="small">
 									</button>
-									<button class="btn btn-primary add-to-cart medium" type="button" data-size="Medium">
+									<button class="btn btn-primary add-to-cart medium" type="button" data-size="medium">
 									</button>
 									<button class="btn btn-primary add-to-cart
-									 large" type="button" data-size="Large">
+									 large" type="button" data-size="large">
 									</button>
 								</span>
 								<!-- Append Meat Pies Here -->
