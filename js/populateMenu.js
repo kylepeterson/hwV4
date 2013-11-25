@@ -20,8 +20,7 @@ function populatePizzas() {
     		this.prices[1] + '/$' + this.prices[2]);
     	if(instance.hasClass('for-order')) {
     		instance.find('.place-order').attr({
-    			data-type: "pizza",
-    			data-name: this.name
+    			'data-name': this.name
     		});
     	}
     	instance.removeClass('template');
