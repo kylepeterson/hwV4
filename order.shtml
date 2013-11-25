@@ -75,6 +75,9 @@
 			<section id="cart" class="col-md-6">
 				<h1>Cart</h1>
 				<form class="cart-form" method="POST" action="http://dawgpizza.com/orders/">
+					<label>
+						<input type="hidden" name="cart">
+					</label>
 					<label>Name:
 						<input class="form-name" type="text" name="name" required>
 					</label>
@@ -90,9 +93,7 @@
 					<label>Phone:
 						<input class="form-phone" type="text" name="phone" required>
 					</label>
-					<label>
-						<input type="hidden" name="cart">
-					</label>
+			
 					<button class="btn btn-primary place-order" type="submit">Place Order</button>
 				</form>
 				<div class="costs">

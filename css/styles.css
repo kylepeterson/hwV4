@@ -301,5 +301,7 @@ form {
 	text-align: center;
 	background-color: white;
 	color: black;
+	padding: 1em;
+	font-style: italic;
 }
 
