@@ -30,7 +30,8 @@ $(function() {
 
 
 function renderCart(cart, container) {
-	var i, item, instance, cost, tax;
+	var i, item, instance;
+	var cost = 0;
 	container.empty();
 	for(i = 0; i < cart.items.length; i++) {
 		item = cart.items[i];
@@ -38,7 +39,7 @@ function renderCart(cart, container) {
 		instance.find('.name').html(item.name);
 		instance.find('.size').html(item.size);
 		instance.find('.price').html("$" + item.price);
-		cost = cost + parseInt(item.price, 10);
+		cost = cost + parseInt(item.price);
 		instance.removeClass('template');
 		container.append(instance);
 	}
