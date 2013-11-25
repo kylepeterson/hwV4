@@ -17,16 +17,18 @@ function populatePizzas() {
     	instance = $('#pizzas .template').clone();
     	instance.find('.name').html(this.name);
        	instance.find('.description').html(this.description);
-  		var buttons = instance.find('.add-to-cart');
+  
     	if(instance.hasClass('for-order')) {
-    		buttons.attr({
+    		instance.find('.add-to-cart').attr({
     			'data-name': this.name,
     			'data-type': "pizza"
     		});
     		instance.find('.small').attr('data-price', prices[0]);
+    		instance.find('small').html("Small: $" + prices[0]);
     		instance.find('.medium').attr('data-price', prices[1]);
-    		instance.find('.large').attr('data-price', prices[2]);
-    		buttons.html(buttons.attr('data-size') + ": $" + buttons.attr('data-price'));
+    		instance.find('medium').html("Medium: $" + prices[1]);
+    		instance.find('.large').attr('data-price', prices[2]);    		
+    		instance.find('large').html("Large: $" + prices[2]);
     	} else {
 			instance.find('.prices').html('$' + prices[0] + '/$' + 
     			prices[1] + '/$' + prices[2]);
