@@ -283,3 +283,7 @@ strong {
 	background-color: white;
 	height: 100%;
 }
+
+#cart h2 {
+	padding-top: .5em;
+}
