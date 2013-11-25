@@ -216,17 +216,18 @@ dt {
 }
 
 dd, #menu li, dl, h1, h2, h3, dt, #menu ul, #menu p, 
-		#order-options ul, #order-options p, #order-options li {
+		#order-options ul, #order-options p, #order-options li,
+			#cart p {
 	padding-bottom: .5em;
 }
 
-#menu, #order-options {
+#menu, #order-options, #cart {
 	text-align: center;
 	padding: 1em;
 	background-color: white;
 }
 
-#menu p, #order-options p {
+#menu p, #order-options p, #cart p {
 	font-weight: bold;
 }
 
