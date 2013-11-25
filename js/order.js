@@ -29,5 +29,15 @@ function addToCart() {
 }
 
 function renderCart(cart, container) {
-
+	var i, item, instance;
+	container.empty();
+	for(i = 0; i < cart.items.length; i++) {
+		item = cart.items[i];
+		instance = $('#cart .template').clone();
+		instance.find('.name').html(item.name);
+		instance.find('.size').html(item.size);
+		instance.find('price').html(item.price);
+		instance.removeClass('template');
+		container.append(instance);
+	}
 }

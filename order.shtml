@@ -70,6 +70,12 @@
 			<section id="cart" class="col-md-6">
 				<h1>Cart</h1>
 				<div id="cart-container">
+					<div class="template cart-item">
+						<h2 class="name"></h2>
+						<p class="size"></p>
+						<p class="price"></p>
+						<button class="btn btn-danger remove" type="button">
+					</div>
 				</div>
 			</section>
 <!--#include virtual="footer.html" -->
