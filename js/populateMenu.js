@@ -26,8 +26,9 @@ function populatePizzas() {
     		var sizes = ['Small', 'Medium', 'Large'];
     		var i;
     		for(i = 0; i < 3; i++) {
-    			instance.find('.' + sizes[i]).attr('data-price', prices[i]);
-    			instance.find('.' + sizes[i]).html(sizes[i] + ": $" + prices[i]);
+    			var button = instance.find("[data-size='" + sizes[i] + "']");
+    			button.attr('data-price', prices[i]);
+    			button.html(sizes[i] + ": $" + prices[i]);
 
     		}
     		/*instance.find('.small').attr('data-price', prices[0]);
