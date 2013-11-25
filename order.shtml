@@ -12,6 +12,14 @@
 			<section id="order-options" class="col-md-6">
 				<h1>Menu</h1>
 				<h2>Pizzas</h2>
+				<p>
+					All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:
+					<ul>
+						<li>Small (12")</li>
+						<li>Medium (14")</li>
+						<li>Large (17")</li>
+					</ul>
+				</p>
 				<div id="pizzas">					
 					<div class="row">
 						<div>
@@ -22,8 +30,15 @@
 									<dt class="name"></dt>
 									<dd class="description"></dd>
 									<dd class="prices"></dd>
+									<div class="btn-group">
 									<button class="btn btn-primary place-order" type="button">
-										Add to Cart
+										Small
+									</button>
+									<button class="btn btn-primary place-order" type="button">
+										Medium
+									</button>
+									<button class="btn btn-primary place-order" type="button">
+										Large
 									</button>
 								</span>
 								<!-- Append Meat Pies Here -->
