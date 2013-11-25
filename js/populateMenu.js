@@ -22,6 +22,10 @@ function populatePizzas() {
     		instance.find('.place-order').attr({
     			'data-name': this.name
     		});
+    		instance.find('.small').html("Small: $" + this.prices[0]);
+    		instance.find('.medium').html("Medium: $" + this.prices[1]);
+    		instance.find('.large').html("Large: $" + this.prices[2]);
+
     	}
     	instance.removeClass('template');
     	// Append to meat or vegetarian section depending on vegetarian attribute
