@@ -62,7 +62,6 @@
 						<!-- Append Desserts Here -->
 						<span class="template dessert for-order">
 							<dt class="name"></dt>
-							<dd class="prices"></dd>
 							<button class="btn btn-primary place-order" type="button">
 						</span>
 					</dl>

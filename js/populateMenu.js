@@ -76,6 +76,8 @@ function populateDesserts() {
     			'data-price': this.price
     		});
        		instance.find('.place-order').html("Add to Cart: $" + this.price);
+    	} else {
+    		instance.find('.prices').html('$' + this.price);
     	}
     	instance.removeClass('template');
     	// append instance to the desserts section
