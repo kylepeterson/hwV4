@@ -47,8 +47,8 @@ function renderCart(cart, container) {
 		container.append(instance);
 	}
 	$('.remove').click(function() {
-		var target = this.attr('data-index');
-		cart.items.spice(target, 1);
+		var target = this.getAttribute('data-index');
+		cart.items.splice(target, 1);
 		renderCart(cart, $('.cart-container'));
 	});
 	tax = parseInt(cost) * .095;
