@@ -82,10 +82,12 @@
 					<label>Zip: 
 						<input class="form-zip" type="text" name="zip" required>
 					</label>
-					<label>
+					<label>Phone:
 						<input class="form-phone" type="text" name="phone" required>
 					</label>
+					<input type="hidden" name="cart">
 					<button class="btn btn-primary place-order" type="submit">Place Order</button>
+
 				</form>
 
 
