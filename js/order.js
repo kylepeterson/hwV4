@@ -32,7 +32,7 @@ function renderCart(cart, container) {
 	container.empty();
 	for(i = 0; i < cart.items.length; i++) {
 		item = cart.items[i];
-		instance = $('.cart-container .template').clone();
+		instance = $('#cart .template').clone();
 		instance.find('.name').html(item.name);
 		instance.find('.size').html(item.size);
 		instance.find('price').html(item.price);
