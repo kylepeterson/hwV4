@@ -9,7 +9,7 @@
 				<img id="order-pic" src="img/order.jpg" alt="an ordering stand for pizza">
 			</section>
 
-			<section id="order-options">
+			<section id="order-options" class="col-md-6">
 				<h1>Menu</h1>
 				<h2>Pizzas</h2>
 				<div id="pizzas">					
@@ -52,5 +52,7 @@
 						</span>
 					</dl>
 				</div>
+			</section>
+			<section id="cart" class="col-md-6">
 			</section>
 <!--#include virtual="footer.html" -->
