@@ -44,10 +44,10 @@ function renderCart(cart, container) {
 		container.append(instance);
 	}
 	var tax = parseInt(cost) * .095;
-	cost = cost.toFixed(2);
-	tax = tax.toFixed(2);
+	cost = parseInt(cost).toFixed(2);
+	tax = parseInt(tax).toFixed(2);
 	$('.sub-total').html('Subtotal: $' + cost);
 	$('.tax').html('Tax: $' + tax);
-	$('.total').html('Total: $' + parseInt(cost) + parseInt(tax));
+	$('.total').html('Total: $' + cost + tax);
 
 }
