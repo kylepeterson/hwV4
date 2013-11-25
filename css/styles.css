@@ -223,9 +223,10 @@ dd, #menu li, dl, h1, h2, h3, dt, #menu ul, #menu p {
 	padding-bottom: .5em;
 }
 
-#menu {
+#menu, #order-options {
 	text-align: center;
 	padding: 1em;
+	background-color: white;
 }
 
 #menu p {
