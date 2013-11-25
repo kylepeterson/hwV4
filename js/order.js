@@ -27,9 +27,9 @@ $(function() {
 		renderCart(cart, $('.cart-container'));
 	});
 
-	$('.place-order').click(function()) {
+	$('.place-order').click(function() {
 		postCart(cart, $('.cart-form'));
-	}
+	});
 });
 
 
