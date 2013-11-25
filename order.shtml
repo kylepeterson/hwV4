@@ -5,6 +5,8 @@
 <!-- Common heading content including meta data and header -->
 <!-- Note: The SSI causes the HTML validator to fail as it does not see the code in header.html. It passes with the SSI code in this file. -->
 <!--#include virtual="header.html" -->
-
+			<section>
+				<img id="order-pic" src="img/order.jpg" alt="an ordering stand for pizza">
+			</section>
 
 <!--#include virtual="footer.html" -->
