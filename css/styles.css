@@ -292,16 +292,12 @@ form {
 	text-align: right;
 }
 
-label {
-	float: right;
-}
 
 .place-order {
-	margin-top: 1em;
-	clear: both;
+	margin-top: 2em;
 }
 
-.order-info {
+#order-info {
 	text-align: center;
 	background-color: white;
 	color: black;
