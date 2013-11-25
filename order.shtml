@@ -70,10 +70,10 @@
 			<section id="cart" class="col-md-6">
 				<h1>Cart</h1>
 				<div class="template cart-item">
-					<h2 class="name"></h2>
+					<h3 class="name"></h3>
 					<p class="size"></p>
 					<p class="price"></p>
-					<button class="btn btn-danger remove" type="button">
+					<button class="btn btn-danger remove" type="button">Remove From Cart</button>
 				</div>
 				<div class="cart-container">
 				</div>
