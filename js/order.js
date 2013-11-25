@@ -42,16 +42,15 @@ function renderCart(cart, container) {
 		instance.find('.size').html(item.size);
 		instance.find('.price').html("$" + item.price);
 		instance.find('.remove').attr('data-index', i);
-		$('.remove').click(function() {
-			var target = this.getAttribute('data-index');
-			cart.items.spice(target, 1);
-			renderCart(cart, $('.cart-container'));
-		});
 		cost += parseInt(item.price);
 		instance.removeClass('template');
 		container.append(instance);
 	}
-
+	$('.remove').click(function() {
+		var target = this.attr('data-index');
+		cart.items.spice(target, 1);
+		renderCart(cart, $('.cart-container'));
+	});
 	tax = parseInt(cost) * .095;
 	total = parseInt(cost) + parseInt(tax);
 	cost = parseInt(cost).toFixed(2);
