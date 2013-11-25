@@ -24,7 +24,8 @@ function populatePizzas() {
     			'data-type': "pizza"
     		});
     		var sizes = ['Small', 'Medium', 'Large'];
-    		for(int i = 0; i < 3; i++) {
+    		var i;
+    		for(i = 0; i < 3; i++) {
     			instance.find('.' + sizes[i]).attr('data-price', prices[i]);
     			instance.find('.' + sizes[i]).html(sizes[i] + ": $" + prices[i]);
 
