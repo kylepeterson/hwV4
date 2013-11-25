@@ -1,4 +1,5 @@
 
+"use strict";
 // Document Ready
 $(function() {
 	// Initialize Cart
@@ -9,7 +10,7 @@ $(function() {
 		phone: null,
 		items: []
 	}
-	
+
 	$('.add-to-cart').click(function() {
 		var newCartItem = {
 			type: this.getAttribute('data-type'),
