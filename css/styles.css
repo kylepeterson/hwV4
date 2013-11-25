@@ -215,7 +215,8 @@ dt {
 	font-weight: bold;
 }
 
-dd, #menu li, dl, h1, h2, h3, dt, #menu ul, #menu p {
+dd, #menu li, dl, h1, h2, h3, dt, #menu ul, #menu p, 
+		#order-options ul, #order-options p, #order-options li {
 	padding-bottom: .5em;
 }
 
@@ -225,7 +226,7 @@ dd, #menu li, dl, h1, h2, h3, dt, #menu ul, #menu p {
 	background-color: white;
 }
 
-#menu p {
+#menu p, #order-options p {
 	font-weight: bold;
 }
 
