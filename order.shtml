@@ -29,17 +29,12 @@
 								<span class="template pizza for-order">
 									<dt class="name"></dt>
 									<dd class="description"></dd>
-									<dd class="prices"></dd>
-									<div class="btn-group" data-toggle="none">
-										<button class="btn btn-primary place-order small" type="button" data-size="Small">
-										</button>
-										<button class="btn btn-primary place-order medium" type="button" data-size="Medium">
-											Medium
-										</button>
-										<button class="btn btn-primary place-order large" type="button" data-size="Large">
-											Large
-										</button>
-									</div>
+									<button class="btn btn-primary place-order small" type="button" data-size="Small">
+									</button>
+									<button class="btn btn-primary place-order medium" type="button" data-size="Medium">
+									</button>
+									<button class="btn btn-primary place-order large" type="button" data-size="Large">
+									</button>
 								</span>
 								<!-- Append Meat Pies Here -->
 							</dl>
