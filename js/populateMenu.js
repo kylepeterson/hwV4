@@ -30,7 +30,7 @@ function populatePizzas() {
     		for(i = 0; i < 3; i++) {
     			var button = instance.find("[data-size='" + sizes[i] + "']");
     			button.attr('data-price', prices[i]);
-    			button.html(sizes[i].charAt(0).toUpperCase() + size[i].substring(1) + ": $" + prices[i]);
+    			button.html(sizes[i].charAt(0).toUpperCase() + sizes[i].substring(1) + ": $" + prices[i]);
 
     		}
     	} else {
